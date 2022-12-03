@@ -181,7 +181,7 @@ const { user, isAuthenticated, loginWithRedirect, logout } = useAuth0();
         </li>
         <li>
           <Link to={"/about"} className={styles.anchor}>
-            About us
+            About
           </Link>
         </li>
         <li>
