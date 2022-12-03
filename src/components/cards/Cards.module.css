@@ -1,0 +1,66 @@
+.CatalogueParent {
+    display: grid ;
+    grid-template-columns: fit-content(0.3fr) 1fr;
+    grid-template-rows: fit-content(0.1fr) 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.filtersList {
+    grid-area: 1 / 1 / 3 / 2;
+
+}
+
+.filtersList ul {
+    list-style: none;
+    text-align: left;
+    margin-top: 80px;
+    padding: 0 0 0 0;
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+.filtersList li:hover {
+    color: blue;
+    cursor: default;
+    background-color: rgba(127, 255, 212, 0.385);
+    text-decoration: underline
+}
+
+
+.filtersApplied{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    grid-area: 2 / 1 / 2 / 2;
+    align-items: flex-start;
+    height: 40px;
+    margin-left: 40px;
+    
+}
+
+.filtersApplied p {
+    margin-left: 10px;
+    background-color: gainsboro; 
+    border-radius: 8px;
+    padding: 1px 4px 1px 4px;
+}
+
+.filtersApplied p:hover{
+    color: blue;
+    cursor: default;
+}
+
+
+.cardsPagination {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.CatalogueCards {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 30px 10px 30px;
+    width: 70vw;
+}

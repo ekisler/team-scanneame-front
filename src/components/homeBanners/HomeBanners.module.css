@@ -1,0 +1,67 @@
+.container{
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  width: 60%;
+  height: 400px;
+  border-radius: 0px;
+  position:relative;
+  left:20%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.img{
+  display:flex;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 15px;  
+  opacity: 0;
+  transition: 400ms;
+  position:absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loaded{
+  opacity: 1;
+}
+
+
+.btnContainer{
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  margin-top: 15px;
+  
+}
+
+.buttonPrev{
+  color:antiquewhite;
+  background-color: #161616;
+  height: 100%;
+  padding-left: 15px;
+  margin: 0 0px;
+  border-radius: 0%;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buttonNext{
+  color:antiquewhite;
+  background-color: #161616;
+  height: 100%;
+  padding-right: 15px;
+  margin: 0 0px;
+  border-radius: 0%;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
