@@ -21,6 +21,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 // fontawesome
 import initFontAwesome from "./utils/initFontAwesome";
+import NotFound from "./components/notFound/NotFound";
 initFontAwesome();
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
         <Route path="/create" element={<Create />} />
         <Route path="/user/account" element={<UserAccount />} />
         <Route path="/:email" element={<Profile />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );

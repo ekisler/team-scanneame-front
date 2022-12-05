@@ -1,13 +1,9 @@
-*{
-  box-sizing: border-box;
-}
-
 body{
   margin: 0;
 }
 
 .nav{
-  background-color:#333 ;
+  background-color:rgb(136, 130, 130) ;
   color:antiquewhite;
   display: flex;
   justify-content: space-between;
@@ -45,6 +41,7 @@ body{
 .itemsCart{
   padding: 0;
   margin-bottom: -15px;
+  color:aliceblue;
 }
 
 .cart{
@@ -54,7 +51,7 @@ body{
   border-radius: 3%;
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+
   margin-top: 15px;
   padding: 5px;
   border-radius: 50%;
@@ -62,6 +59,7 @@ body{
 
 .cart:hover{
   background-color: rgb(249, 216, 173);
+align-items: center;
 }
 
 .nav li.active{

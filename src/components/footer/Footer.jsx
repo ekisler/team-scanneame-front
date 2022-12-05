@@ -1,37 +1,21 @@
-/*
 import React from 'react'
 import styles from './Footer.module.css'
-
-export default function Footer() {
-  return (
-    <div className={styles.container}>
-      
-    </div>
-  )
-}
-
-*/
-
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiOutlineTwitter, AiFillInstagram, } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
-function Footer() {
+export default function Footer() {
   let date = new Date();
   let year = date.getFullYear();
   return (
-    <Container fluid className="footer">
+    <div className={styles.container}>
+      <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Scanneame Team</h3>
-        </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} SCANNEAME</h3>
+          <p>Designed and Developed by: Scaneame Team</p>
+          </Col>
+          <Col md="4" className="footer-copywright">
+          <p>Copyright © {year} SCANEAME</p>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
@@ -75,11 +59,10 @@ function Footer() {
                 <AiFillInstagram />
               </a>
             </li>
-          </ul>
-        </Col>
-      </Row>
-    </Container>
-  );
+            </ul>
+            </Col>
+          </Row>
+          </Container>
+    </div>
+  )
 }
-
-export default Footer;
